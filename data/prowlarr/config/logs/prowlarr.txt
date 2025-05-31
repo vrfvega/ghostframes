@@ -1,0 +1,983 @@
+2025-05-31 02:05:52.0|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:53.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:05:54.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 02:05:54.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:55.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:05:55.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 02:05:55.8|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:55.8|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:56.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:05:57.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 02:05:57.9|Warn|SonarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:58.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:05:59.8|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 02:05:59.8|Warn|SonarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:05:59.8|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 99
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 02:16:49.8|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:26:19.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:26:19.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:26:19.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:26:19.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 02:26:19.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 02:26:19.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:26:21.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 02:32:19.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 02:47:49.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:56:49.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 02:56:51.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:03:19.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 03:18:49.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:27:20.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:27:22.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 03:34:20.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:49:50.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:57:50.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 03:57:52.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:05:20.1|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:20:50.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:28:20.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 04:28:22.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:36:20.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 04:51:50.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 04:58:50.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 04:58:52.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:07:20.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 05:22:50.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:29:20.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:29:22.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 05:38:20.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 05:53:50.4|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 05:59:50.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 05:59:52.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:09:20.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:24:50.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 06:30:20.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 06:30:22.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 06:40:20.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 06:55:50.6|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:00:50.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 07:00:52.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 07:11:20.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:26:50.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:31:20.7|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 07:31:22.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:42:20.7|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 07:57:50.7|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:01:50.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:01:52.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 08:06:19.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:06:20.2|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:20.2|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:21.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:06:22.1|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:22.1|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:22.1|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:23.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:06:24.0|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:24.0|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:25.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:06:25.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://radarr:7878/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:25.9|Warn|RadarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:25.9|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://radarr:7878/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 228
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 163
+   at NzbDrone.Core.Applications.Radarr.RadarrV3Proxy.AddIndexer(RadarrIndexer indexer, RadarrSettings settings) in ./Prowlarr.Core/Applications/Radarr/RadarrV3Proxy.cs:line 100
+   at NzbDrone.Core.Applications.Radarr.Radarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Radarr/Radarr.cs:line 142
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 239
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:25.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:06:27.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:27.9|Warn|SonarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:27.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentz2nz] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:06:29.9|Warn|HttpClient|HTTP Error - Res: HTTP/1.1 [POST] http://sonarr:8989/api/v3/indexer?forceSave=true: 400.BadRequest (274 bytes)
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+2025-05-31 08:06:29.9|Warn|SonarrV3Proxy|No Results in configured categories. See FAQ Entry: Prowlarr will not sync X Indexer to App
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:06:29.9|Warn|ApplicationService|NzbDrone.Core.Applications.ApplicationService HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [400:BadRequest] [POST] at [http://sonarr:8989/api/v3/indexer?forceSave=true]
+   at NzbDrone.Common.Http.HttpClient.ExecuteAsync(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 128
+   at NzbDrone.Common.Http.HttpClient.Execute(HttpRequest request) in ./Prowlarr.Common/Http/HttpClient.cs:line 137
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.Execute[TResource](HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 215
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.ExecuteIndexerRequest(HttpRequest request) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 150
+   at NzbDrone.Core.Applications.Sonarr.SonarrV3Proxy.AddIndexer(SonarrIndexer indexer, SonarrSettings settings) in ./Prowlarr.Core/Applications/Sonarr/SonarrV3Proxy.cs:line 99
+   at NzbDrone.Core.Applications.Sonarr.Sonarr.AddIndexer(IndexerDefinition indexer) in ./Prowlarr.Core/Applications/Sonarr/Sonarr.cs:line 147
+   at NzbDrone.Core.Applications.ApplicationService.<>c__DisplayClass14_2.<SyncIndexers>b__5(IApplication a) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 177
+   at NzbDrone.Core.Applications.ApplicationService.ExecuteAction(Action`1 applicationAction, IApplication application) in ./Prowlarr.Core/Applications/ApplicationService.cs:line 281
+[
+  {
+    "isWarning": false,
+    "propertyName": "",
+    "errorMessage": "Query successful, but no results in the configured categories were returned from your indexer. This may be an issue with the indexer or your indexer category settings.",
+    "severity": "error"
+  }
+]
+
+
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:13:20.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 08:28:50.8|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 08:32:20.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 08:32:22.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:44:20.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 08:59:50.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:02:51.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 09:02:53.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:15:20.9|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:30:51.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 09:30:51.2|Warn|Cardigann|Request for Stremthru failed with status 521. Retrying in 1.6697135s.
+2025-05-31 09:30:53.1|Warn|Cardigann|Request for Stremthru failed with status 521. Retrying in 3.317555s.
+2025-05-31 09:30:56.6|Warn|Cardigann|HTTP Error - Res: HTTP/2.0 [GET] https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt3581920:1:1%22: 521.521 (0 bytes)
+2025-05-31 09:30:56.6|Warn|Cardigann|Unable to connect to Stremthru at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt3581920:1:1%22]. Indexer's server is unavailable. Try again later. HTTP request failed: [521:521] [GET] at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt3581920:1:1%22]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [521:521] [GET] at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt3581920:1:1%22]
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 701
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 610
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:33:21.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 09:33:21.2|Warn|Cardigann|Request for Stremthru failed with status 521. Retrying in 2.3893989s.
+2025-05-31 09:33:23.8|Warn|Cardigann|Request for Stremthru failed with status 521. Retrying in 2.7178649s.
+2025-05-31 09:33:26.6|Warn|Cardigann|HTTP Error - Res: HTTP/2.0 [GET] https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt7286456: 521.521 (0 bytes)
+2025-05-31 09:33:26.6|Warn|Cardigann|Unable to connect to Stremthru at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt7286456]. Indexer's server is unavailable. Try again later. HTTP request failed: [521:521] [GET] at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt7286456]
+
+[v1.36.3.5071] NzbDrone.Common.Http.HttpException: HTTP request failed: [521:521] [GET] at [https://stremthru.savvyservers.org/v0/torrents?no_missing_size=1&sid=tt7286456]
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchIndexerResponse(IndexerRequest request) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 701
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchPage(IndexerRequest request, IParseIndexerResponse parser) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 610
+   at NzbDrone.Core.Indexers.HttpIndexerBase`1.FetchReleases(Func`2 pageableRequestChainSelector, SearchCriteriaBase searchCriteria, Boolean isRecent) in ./Prowlarr.Core/Indexers/HttpIndexerBase.cs:line 428
+
+
+
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 09:46:21.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:01:51.0|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:03:51.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 10:03:53.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:17:21.1|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 10:32:51.1|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:34:21.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 10:34:23.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 10:48:21.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 11:03:51.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:04:51.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:04:53.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 11:19:21.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 11:34:51.3|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 11:35:21.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 11:35:23.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 11:50:21.3|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 11:50:21.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 12:05:51.4|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:05:51.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:05:54.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 12:21:21.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 12:36:21.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 12:36:23.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:36:51.5|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.5|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.5|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.5|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.5|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 12:52:21.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 12:52:21.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 12:52:21.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020, 2040, 2060, 2030, 2045]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [], Offset: 0, Limit: 100, Categories: [2000, 2020]
+2025-05-31 13:06:51.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 0, Limit: 100, Categories: [2000]
+2025-05-31 13:06:53.7|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [], Offset: 100, Limit: 100, Categories: [2000]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:07:51.6|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:11:49.9|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-05-31 13:11:50.0|Info|ConsoleApp|Exiting main.
+2025-05-31 13:11:55.2|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 1.36.3.5071
+2025-05-31 13:11:55.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-05-31 13:11:55.3|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-05-31 13:11:55.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-05-31 13:11:55.8|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-05-31 13:11:55.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-05-31 13:11:55.9|Info|DatabaseEngineVersionCheck|SQLite 3.48.0
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0367087s
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0384112s
+2025-05-31 13:11:55.9|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-05-31 13:11:55.9|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-05-31 13:11:55.9|Info|DatabaseEngineVersionCheck|SQLite 3.48.0
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0025684s
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-05-31 13:11:55.9|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0027044s
+2025-05-31 13:11:56.2|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-05-31 13:11:56.3|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-05-31 13:11:56.4|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-05-31 13:11:56.8|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-05-31 13:11:56.8|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-05-31 13:11:56.8|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-05-31 13:11:57.3|Warn|IndexerDefinitionUpdateService|Definition /config/Definitions/Custom/elfhosted-internal.yml does not have unique file name or Indexer name
+2025-06-01 01:51:35.5|Info|Bootstrap|Starting Prowlarr - /app/bin/Prowlarr - Version 1.36.3.5071
+2025-06-01 01:51:35.6|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-06-01 01:51:35.7|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-06-01 01:51:36.0|Info|AppFolderInfo|Data directory is being overridden to [/config]
+2025-06-01 01:51:36.1|Info|MigrationController|*** Migrating data source=/config/prowlarr.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-06-01 01:51:36.2|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-06-01 01:51:36.2|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-06-01 01:51:36.2|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-06-01 01:51:36.3|Info|DatabaseEngineVersionCheck|SQLite 3.48.0
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0416697s
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0431646s
+2025-06-01 01:51:36.3|Info|MigrationController|*** Migrating data source=/config/logs.db;cache size=-20000;datetimekind=Utc;journal mode=Wal;pooling=True;version=3;busytimeout=100 ***
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrating
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|PerformDBOperation 
+2025-06-01 01:51:36.3|Info|NzbDrone.Core.Datastore.Migration.Framework.NzbDroneSQLiteProcessor|Performing DB Operation
+2025-06-01 01:51:36.3|Info|DatabaseEngineVersionCheck|SQLite 3.48.0
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0021663s
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|DatabaseEngineVersionCheck migrated
+2025-06-01 01:51:36.3|Info|FluentMigrator.Runner.MigrationRunner|=> 0.0023112s
+2025-06-01 01:51:36.5|Info|Microsoft.Hosting.Lifetime|Now listening on: http://[::]:9696
+2025-06-01 01:51:36.6|Info|CommandExecutor|Starting 3 threads for tasks.
+2025-06-01 01:51:36.8|Info|ManagedHttpDispatcher|IPv4 is available: True, IPv6 will be disabled
+2025-06-01 01:51:37.2|Info|Microsoft.Hosting.Lifetime|Application started. Press Ctrl+C to shut down.
+2025-06-01 01:51:37.2|Info|Microsoft.Hosting.Lifetime|Hosting environment: Production
+2025-06-01 01:51:37.2|Info|Microsoft.Hosting.Lifetime|Content root path: /app/bin
+2025-06-01 01:51:37.7|Warn|IndexerDefinitionUpdateService|Definition /config/Definitions/Custom/elfhosted-internal.yml does not have unique file name or Indexer name
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [EZTV] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [BitSearch] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [Stremthru] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [Nyaa.si] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5070]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [The Pirate Bay] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5040, 5045]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [TorrentDownload] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000, 5050, 5070]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [Torrentio] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:23:24.2|Info|ReleaseSearchService|Searching indexer(s): [Zilean] for Term: [] for Season / Episode:[], Offset: 0, Limit: 100, Categories: [5000]
+2025-05-31 13:33:56.0|Info|Microsoft.Hosting.Lifetime|Application is shutting down...
+2025-05-31 13:33:56.1|Info|ConsoleApp|Exiting main.

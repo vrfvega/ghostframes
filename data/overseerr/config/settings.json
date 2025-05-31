@@ -1,0 +1,229 @@
+{
+ "clientId": "3fe6ba37-df84-4c63-a223-3faf65840659",
+ "vapidPrivate": "L5fjhhqOjS1VpzUt2WcwozT79prZCjVQFK9XAhopcWE",
+ "vapidPublic": "BKBBOg0JyHjg7iBoDLWva_eSJqEKQl-gUVpxQQrdUsI0YrsDi-jjx8Zlvi_XcU7tdWaT5vgFzFAyFRkhRBi7ofQ",
+ "main": {
+  "apiKey": "MTc0NjI0NTA4NTQ1MGU5YjU5OGEzLWZiN2MtNGU0OS05Y2FiLWJjNTNhMTlmOGQ2MA==",
+  "applicationTitle": "Overseerr",
+  "applicationUrl": "https://overseerr.ghostframes.net",
+  "csrfProtection": true,
+  "cacheImages": false,
+  "defaultPermissions": 1835040,
+  "defaultQuotas": {
+   "movie": {
+    "quotaLimit": 3,
+    "quotaDays": 1
+   },
+   "tv": {
+    "quotaLimit": 1,
+    "quotaDays": 1
+   }
+  },
+  "hideAvailable": false,
+  "localLogin": true,
+  "newPlexLogin": true,
+  "region": "",
+  "originalLanguage": "",
+  "trustProxy": true,
+  "partialRequestsEnabled": true,
+  "locale": "en"
+ },
+ "plex": {
+  "name": "apollo",
+  "ip": "192.168.1.195",
+  "port": 32400,
+  "useSsl": false,
+  "libraries": [
+   {
+    "id": "3",
+    "name": "Movies",
+    "enabled": true,
+    "type": "movie",
+    "lastScan": 1748711700030
+   },
+   {
+    "id": "4",
+    "name": "Anime",
+    "enabled": true,
+    "type": "show",
+    "lastScan": 1748711700035
+   },
+   {
+    "id": "5",
+    "name": "TV Shows",
+    "enabled": true,
+    "type": "show",
+    "lastScan": 1748711700037
+   }
+  ],
+  "machineId": "2da8734a57f64dd25887cd71a12b350a9c789430"
+ },
+ "tautulli": {},
+ "radarr": [
+  {
+   "name": "Radarr",
+   "hostname": "radarr.ghostframes.net",
+   "port": 443,
+   "apiKey": "20befcd76ad046ae92b4f8676cd6514e",
+   "useSsl": true,
+   "baseUrl": "",
+   "activeProfileId": 1,
+   "activeProfileName": "Any",
+   "activeDirectory": "/movies",
+   "is4k": false,
+   "minimumAvailability": "released",
+   "tags": [],
+   "isDefault": true,
+   "syncEnabled": true,
+   "preventSearch": false,
+   "tagRequests": false,
+   "id": 0
+  }
+ ],
+ "sonarr": [
+  {
+   "name": "Sonarr",
+   "hostname": "sonarr.ghostframes.net",
+   "port": 443,
+   "apiKey": "34c045fb80db48e9a7c47c36c489579c",
+   "useSsl": true,
+   "baseUrl": "",
+   "activeProfileId": 1,
+   "activeLanguageProfileId": 1,
+   "activeProfileName": "Any",
+   "activeDirectory": "/tv",
+   "activeAnimeProfileId": 8,
+   "activeAnimeLanguageProfileId": 1,
+   "activeAnimeProfileName": "Remux-1080p - Anime",
+   "activeAnimeDirectory": "/anime",
+   "tags": [],
+   "animeTags": [],
+   "is4k": false,
+   "isDefault": true,
+   "enableSeasonFolders": false,
+   "syncEnabled": true,
+   "preventSearch": false,
+   "tagRequests": false,
+   "id": 0
+  }
+ ],
+ "public": {
+  "initialized": true
+ },
+ "notifications": {
+  "agents": {
+   "email": {
+    "enabled": false,
+    "options": {
+     "emailFrom": "",
+     "smtpHost": "",
+     "smtpPort": 587,
+     "secure": false,
+     "ignoreTls": false,
+     "requireTls": false,
+     "allowSelfSigned": false,
+     "senderName": "Overseerr"
+    }
+   },
+   "discord": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "webhookUrl": "",
+     "enableMentions": true
+    }
+   },
+   "lunasea": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "webhookUrl": ""
+    }
+   },
+   "slack": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "webhookUrl": ""
+    }
+   },
+   "telegram": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "botAPI": "",
+     "chatId": "",
+     "sendSilently": false
+    }
+   },
+   "pushbullet": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "accessToken": ""
+    }
+   },
+   "pushover": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "accessToken": "",
+     "userToken": "",
+     "sound": ""
+    }
+   },
+   "webhook": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "webhookUrl": "",
+     "jsonPayload": "IntcbiAgXCJub3RpZmljYXRpb25fdHlwZVwiOiBcInt7bm90aWZpY2F0aW9uX3R5cGV9fVwiLFxuICBcImV2ZW50XCI6IFwie3tldmVudH19XCIsXG4gIFwic3ViamVjdFwiOiBcInt7c3ViamVjdH19XCIsXG4gIFwibWVzc2FnZVwiOiBcInt7bWVzc2FnZX19XCIsXG4gIFwiaW1hZ2VcIjogXCJ7e2ltYWdlfX1cIixcbiAgXCJ7e21lZGlhfX1cIjoge1xuICAgIFwibWVkaWFfdHlwZVwiOiBcInt7bWVkaWFfdHlwZX19XCIsXG4gICAgXCJ0bWRiSWRcIjogXCJ7e21lZGlhX3RtZGJpZH19XCIsXG4gICAgXCJ0dmRiSWRcIjogXCJ7e21lZGlhX3R2ZGJpZH19XCIsXG4gICAgXCJzdGF0dXNcIjogXCJ7e21lZGlhX3N0YXR1c319XCIsXG4gICAgXCJzdGF0dXM0a1wiOiBcInt7bWVkaWFfc3RhdHVzNGt9fVwiXG4gIH0sXG4gIFwie3tyZXF1ZXN0fX1cIjoge1xuICAgIFwicmVxdWVzdF9pZFwiOiBcInt7cmVxdWVzdF9pZH19XCIsXG4gICAgXCJyZXF1ZXN0ZWRCeV9lbWFpbFwiOiBcInt7cmVxdWVzdGVkQnlfZW1haWx9fVwiLFxuICAgIFwicmVxdWVzdGVkQnlfdXNlcm5hbWVcIjogXCJ7e3JlcXVlc3RlZEJ5X3VzZXJuYW1lfX1cIixcbiAgICBcInJlcXVlc3RlZEJ5X2F2YXRhclwiOiBcInt7cmVxdWVzdGVkQnlfYXZhdGFyfX1cIixcbiAgICBcInJlcXVlc3RlZEJ5X3NldHRpbmdzX2Rpc2NvcmRJZFwiOiBcInt7cmVxdWVzdGVkQnlfc2V0dGluZ3NfZGlzY29yZElkfX1cIixcbiAgICBcInJlcXVlc3RlZEJ5X3NldHRpbmdzX3RlbGVncmFtQ2hhdElkXCI6IFwie3tyZXF1ZXN0ZWRCeV9zZXR0aW5nc190ZWxlZ3JhbUNoYXRJZH19XCJcbiAgfSxcbiAgXCJ7e2lzc3VlfX1cIjoge1xuICAgIFwiaXNzdWVfaWRcIjogXCJ7e2lzc3VlX2lkfX1cIixcbiAgICBcImlzc3VlX3R5cGVcIjogXCJ7e2lzc3VlX3R5cGV9fVwiLFxuICAgIFwiaXNzdWVfc3RhdHVzXCI6IFwie3tpc3N1ZV9zdGF0dXN9fVwiLFxuICAgIFwicmVwb3J0ZWRCeV9lbWFpbFwiOiBcInt7cmVwb3J0ZWRCeV9lbWFpbH19XCIsXG4gICAgXCJyZXBvcnRlZEJ5X3VzZXJuYW1lXCI6IFwie3tyZXBvcnRlZEJ5X3VzZXJuYW1lfX1cIixcbiAgICBcInJlcG9ydGVkQnlfYXZhdGFyXCI6IFwie3tyZXBvcnRlZEJ5X2F2YXRhcn19XCIsXG4gICAgXCJyZXBvcnRlZEJ5X3NldHRpbmdzX2Rpc2NvcmRJZFwiOiBcInt7cmVwb3J0ZWRCeV9zZXR0aW5nc19kaXNjb3JkSWR9fVwiLFxuICAgIFwicmVwb3J0ZWRCeV9zZXR0aW5nc190ZWxlZ3JhbUNoYXRJZFwiOiBcInt7cmVwb3J0ZWRCeV9zZXR0aW5nc190ZWxlZ3JhbUNoYXRJZH19XCJcbiAgfSxcbiAgXCJ7e2NvbW1lbnR9fVwiOiB7XG4gICAgXCJjb21tZW50X21lc3NhZ2VcIjogXCJ7e2NvbW1lbnRfbWVzc2FnZX19XCIsXG4gICAgXCJjb21tZW50ZWRCeV9lbWFpbFwiOiBcInt7Y29tbWVudGVkQnlfZW1haWx9fVwiLFxuICAgIFwiY29tbWVudGVkQnlfdXNlcm5hbWVcIjogXCJ7e2NvbW1lbnRlZEJ5X3VzZXJuYW1lfX1cIixcbiAgICBcImNvbW1lbnRlZEJ5X2F2YXRhclwiOiBcInt7Y29tbWVudGVkQnlfYXZhdGFyfX1cIixcbiAgICBcImNvbW1lbnRlZEJ5X3NldHRpbmdzX2Rpc2NvcmRJZFwiOiBcInt7Y29tbWVudGVkQnlfc2V0dGluZ3NfZGlzY29yZElkfX1cIixcbiAgICBcImNvbW1lbnRlZEJ5X3NldHRpbmdzX3RlbGVncmFtQ2hhdElkXCI6IFwie3tjb21tZW50ZWRCeV9zZXR0aW5nc190ZWxlZ3JhbUNoYXRJZH19XCJcbiAgfSxcbiAgXCJ7e2V4dHJhfX1cIjogW11cbn0i"
+    }
+   },
+   "webpush": {
+    "enabled": false,
+    "options": {}
+   },
+   "gotify": {
+    "enabled": false,
+    "types": 0,
+    "options": {
+     "url": "",
+     "token": ""
+    }
+   }
+  }
+ },
+ "jobs": {
+  "plex-recently-added-scan": {
+   "schedule": "0 */5 * * * *"
+  },
+  "plex-full-scan": {
+   "schedule": "0 0 3 * * *"
+  },
+  "plex-watchlist-sync": {
+   "schedule": "0 */3 * * * *"
+  },
+  "plex-refresh-token": {
+   "schedule": "0 0 5 * * *"
+  },
+  "radarr-scan": {
+   "schedule": "0 0 4 * * *"
+  },
+  "sonarr-scan": {
+   "schedule": "0 30 4 * * *"
+  },
+  "availability-sync": {
+   "schedule": "0 0 5 * * *"
+  },
+  "download-sync": {
+   "schedule": "0 * * * * *"
+  },
+  "download-sync-reset": {
+   "schedule": "0 0 1 * * *"
+  },
+  "image-cache-cleanup": {
+   "schedule": "0 0 5 * * *"
+  }
+ }
+}
