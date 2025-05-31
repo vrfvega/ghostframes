@@ -1,0 +1,26 @@
+services:
+# RDTClient- Real-Debrid torrent client
+  rdtclient:
+    image: rogerfar/rdtclient
+    container_name: rdtclient
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - t3_proxy
+    ports:
+      - 6500:6500
+    volumes:
+      - ../data/rdtclient/db:/data/db
+      - ../storage/downloads:/data/downloads
+    environment:
+      - TZ=${TZ}
+      - PUID=${PUID}
+      - PGID=${PGID}
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      - "traefik.enable=true"
+      - "traefik.http.routers.rdtclient-rtr.rule=Host(`rdtclient.${DOMAIN}`)"
+      - "traefik.http.routers.rdtclient-rtr.entrypoints=https"
+      - "traefik.http.routers.rdtclient-rtr.tls=true"
+      - "traefik.http.routers.rdtclient-rtr.tls.certresolver=dns-route53"

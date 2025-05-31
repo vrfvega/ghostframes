@@ -1,0 +1,54 @@
+services:
+# Traefik3 - Reverse proxy
+  traefik:
+    image: traefik:v3.4
+    container_name: traefik
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - t3_proxy
+    command:
+      - --global.checkNewVersion=true
+      - --global.sendAnonymousUsage=false
+      - --entrypoints.http.address=:80
+      - --entrypoints.https.address=:443
+      - --entrypoints.traefik.address=:8080
+      - --entrypoints.http.http.redirections.entrypoint.to=https
+      - --entrypoints.http.http.redirections.entrypoint.scheme=https
+      - --entrypoints.http.http.redirections.entrypoint.permanent=true
+      - --api=true
+      - --api.dashboard=true
+      - --api.insecure=true # TODO: Delete and setup basic auth
+      - --log=true
+      - --log.level=INFO # (Default: error) DEBUG, INFO, WARN, ERROR, FATAL, PANIC
+      - --providers.docker=true
+      - --providers.docker.endpoint=unix:///var/run/docker.sock
+      - --providers.docker.exposedByDefault=false
+      - --certificatesResolvers.dns-route53.acme.email=${EMAIL_ADDRESS}
+      # - --certificatesResolvers.dns-route53.acme.caServer=https://acme-staging-v02.api.letsencrypt.org/directory # LetsEncrypt Staging Server - Delete in prod
+      - --certificatesResolvers.dns-route53.acme.storage=/var/traefik/certs/acme.json
+      - --certificatesResolvers.dns-route53.acme.dnsChallenge.provider=route53
+      - --certificatesResolvers.dns-route53.acme.dnsChallenge.resolvers=1.1.1.1:53,1.0.0.1:53
+    ports:
+      - 80:80
+      - 443:443
+      - 8080:8080
+    volumes:
+      - /run/docker.sock:/run/docker.sock:ro
+      - ../data/traefik/certs/:/var/traefik/certs/
+    environment:
+      - AWS_ACCESS_KEY_ID=${AWS_ACCESS_KEY_ID}
+      - AWS_SECRET_ACCESS_KEY=${AWS_SECRET_ACCESS_KEY}
+      - AWS_REGION=${AWS_REGION}
+      - AWS_HOSTED_ZONE_ID=${AWS_HOSTED_ZONE_ID}
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      - "traefik.enable=true"
+      - "traefik.http.routers.traefik-rtr.rule=Host(`traefik.${DOMAIN}`)"
+      - "traefik.http.routers.traefik-rtr.entrypoints=https"
+      - "traefik.http.routers.traefik-rtr.tls=true"
+      - "traefik.http.routers.traefik-rtr.tls.certresolver=dns-route53"
+      - "traefik.http.routers.traefik-rtr.tls.domains[0].main=${DOMAIN}"
+      - "traefik.http.routers.traefik-rtr.tls.domains[0].sans=*.${DOMAIN}"
+      - "traefik.http.routers.traefik-rtr.service=api@internal"

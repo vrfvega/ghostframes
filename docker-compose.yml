@@ -1,0 +1,17 @@
+networks:
+  default:
+    driver: bridge
+  t3_proxy:
+    name: t3_proxy
+    driver: bridge
+
+include:
+  - ./compose/overseerr.yml
+  - ./compose/prowlarr.yml
+  - ./compose/radarr.yml
+  - ./compose/rdtclient.yml
+  - ./compose/sonarr.yml
+  - ./compose/traefik.yml
+  - ./compose/watchtower.yml
+  - ./compose/whoami.yml
+  - ./compose/wizarr.yml

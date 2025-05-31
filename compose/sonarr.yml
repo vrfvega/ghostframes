@@ -1,0 +1,29 @@
+services:
+# Sonarr - TV Shows Management
+  sonarr:
+    image: ghcr.io/hotio/sonarr
+    container_name: sonarr
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - t3_proxy
+    ports:
+      - 8989:8989
+    volumes:
+      - ../data/sonarr/config:/config
+      - ../storage/downloads:/data/downloads
+      - /mnt/Expansion/Anime:/anime
+      - /mnt/Expansion/TV:/tv
+      - /etc/localtime:/etc/localtime:ro
+    environment:
+      - TZ=${TZ}
+      - PUID=${PUID}
+      - PGID=${PGID}
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      - "traefik.enable=true"
+      - "traefik.http.routers.sonarr-rtr.rule=Host(`sonarr.${DOMAIN}`)"
+      - "traefik.http.routers.sonarr-rtr.entrypoints=https"
+      - "traefik.http.routers.sonarr-rtr.tls=true"
+      - "traefik.http.routers.sonarr-rtr.tls.certresolver=dns-route53"
