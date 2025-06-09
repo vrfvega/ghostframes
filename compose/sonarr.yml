@@ -13,8 +13,8 @@ services:
     volumes:
       - ../data/sonarr/config:/config
       - ../storage/downloads:/data/downloads
-      - /mnt/d/Anime:/anime
-      - /mnt/d/TV:/tv
+      - ${ANIME_PATH}:/anime
+      - ${TV_PATH}:/tv
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=${TZ}

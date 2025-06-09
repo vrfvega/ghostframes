@@ -13,7 +13,7 @@ services:
     volumes:
       - ../data/radarr/config:/config
       - ../storage/downloads:/data/downloads
-      - /mnt/d/Movies:/movies
+      - ${MOVIES_PATH}:/movies
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=${TZ}

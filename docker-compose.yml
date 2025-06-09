@@ -17,3 +17,4 @@ include:
   - ./compose/authentik.yml
   - ./compose/jellyfin.yml
   - ./compose/jellyseerr.yml
+  - ./compose/bazarr.yml
