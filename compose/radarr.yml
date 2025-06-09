@@ -13,7 +13,7 @@ services:
     volumes:
       - ../data/radarr/config:/config
       - ../storage/downloads:/data/downloads
-      - /mnt/Expansion/Movies:/movies
+      - /mnt/d/Movies:/movies
       - /etc/localtime:/etc/localtime:ro
     environment:
       - TZ=${TZ}
@@ -26,3 +26,4 @@ services:
       - "traefik.http.routers.radarr-rtr.entrypoints=https"
       - "traefik.http.routers.radarr-rtr.tls=true"
       - "traefik.http.routers.radarr-rtr.tls.certresolver=dns-route53"
+      - "traefik.http.routers.radarr-rtr.middlewares=authentik@docker"

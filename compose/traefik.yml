@@ -19,7 +19,6 @@ services:
       - --entrypoints.http.http.redirections.entrypoint.permanent=true
       - --api=true
       - --api.dashboard=true
-      - --api.insecure=true # TODO: Delete and setup basic auth
       - --log=true
       - --log.level=INFO # (Default: error) DEBUG, INFO, WARN, ERROR, FATAL, PANIC
       - --providers.docker=true
@@ -52,3 +51,20 @@ services:
       - "traefik.http.routers.traefik-rtr.tls.domains[0].main=${DOMAIN}"
       - "traefik.http.routers.traefik-rtr.tls.domains[0].sans=*.${DOMAIN}"
       - "traefik.http.routers.traefik-rtr.service=api@internal"
+      - "traefik.http.middlewares.authentik.forwardauth.address=http://authentik_server:9000/outpost.goauthentik.io/auth/traefik"
+      - "traefik.http.middlewares.authentik.forwardauth.trustForwardHeader=true"
+      - >
+        traefik.http.middlewares.authentik.forwardauth.authResponseHeaders=
+        X-authentik-username,
+        X-authentik-groups,
+        X-authentik-entitlements,
+        X-authentik-email,
+        X-authentik-name,
+        X-authentik-uid,
+        X-authentik-jwt,
+        X-authentik-meta-jwks,
+        X-authentik-meta-outpost,
+        X-authentik-meta-provider,
+        X-authentik-meta-app,
+        X-authentik-meta-version
+      - "traefik.http.routers.traefik-rtr.middlewares=authentik@docker"

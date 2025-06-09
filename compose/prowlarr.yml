@@ -24,3 +24,5 @@ services:
       - "traefik.http.routers.prowlarr-rtr.entrypoints=https"
       - "traefik.http.routers.prowlarr-rtr.tls=true"
       - "traefik.http.routers.prowlarr-rtr.tls.certresolver=dns-route53"
+      - "traefik.http.routers.prowlarr-rtr.middlewares=authentik@docker"
+      

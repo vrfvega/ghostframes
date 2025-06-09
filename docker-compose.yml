@@ -6,7 +6,6 @@ networks:
     driver: bridge
 
 include:
-  - ./compose/overseerr.yml
   - ./compose/prowlarr.yml
   - ./compose/radarr.yml
   - ./compose/rdtclient.yml
@@ -15,3 +14,6 @@ include:
   - ./compose/watchtower.yml
   - ./compose/whoami.yml
   - ./compose/wizarr.yml
+  - ./compose/authentik.yml
+  - ./compose/jellyfin.yml
+  - ./compose/jellyseerr.yml

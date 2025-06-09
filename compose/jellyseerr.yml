@@ -1,0 +1,24 @@
+services:
+  jellyseerr:
+    image: fallenbagel/jellyseerr
+    container_name: jellyseerr
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    networks:
+      - t3_proxy
+    ports:
+      - 5055:5055
+    volumes:
+      - ../data/jellyseerr/config:/app/config
+    environment:
+      - TZ=${TZ}
+      - LOG_LEVEL=INFO
+    labels:
+      - "com.centurylinklabs.watchtower.enable=true"
+      - "traefik.enable=true"
+      - "traefik.http.routers.jellyseerr-rtr.rule=Host(`jellyseerr.${DOMAIN}`)"
+      - "traefik.http.routers.jellyseerr-rtr.entrypoints=https"
+      - "traefik.http.routers.jellyseerr-rtr.tls=true"
+      - "traefik.http.routers.jellyseerr-rtr.tls.certresolver=dns-route53"
+      
