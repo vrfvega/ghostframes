@@ -12,10 +12,32 @@ services:
       - 5690:5690
     volumes:
       - ../data/wizarr/database:/data/database
+      - ../data/wizarr/wizard_steps:/data/wizard_steps
+    environment:
+      - TZ=${TZ}
+      - PUID=${PUID}
+      - PGID=${PGID}
+      - DISABLE_BUILTIN_AUTH=True
     labels:
       - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
+      
+      # 🚪 Public router (no Authentik) for setup, join, static
+      - >
+        traefik.http.routers.wizarr-rtr-public.rule=Host(`wizarr.${DOMAIN}`) && 
+        (PathPrefix(`/join`) || PathPrefix(`/j`) || PathPrefix(`/setup`) || PathPrefix(`/static`))
+      - "traefik.http.routers.wizarr-rtr-public.entrypoints=https"
+      - "traefik.http.routers.wizarr-rtr-public.tls=true"
+      - "traefik.http.routers.wizarr-rtr-public.tls.certresolver=dns-route53"
+      - "traefik.http.routers.wizarr-rtr-public.service=wizarr-svc"
+
+      # 🔐 Authenticated router (all other paths)
       - "traefik.http.routers.wizarr-rtr.rule=Host(`wizarr.${DOMAIN}`)"
       - "traefik.http.routers.wizarr-rtr.entrypoints=https"
       - "traefik.http.routers.wizarr-rtr.tls=true"
       - "traefik.http.routers.wizarr-rtr.tls.certresolver=dns-route53"
+      - "traefik.http.routers.wizarr-rtr.middlewares=authentik@docker"
+      - "traefik.http.routers.wizarr-rtr.service=wizarr-svc"
+
+      # 🧩 Shared service
+      - "traefik.http.services.wizarr-svc.loadbalancer.server.port=5690"
