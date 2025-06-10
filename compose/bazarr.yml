@@ -1,7 +1,7 @@
 ---
 services:
   bazarr:
-    image: lscr.io/linuxserver/bazarr
+    image: lscr.io/linuxserver/bazarr:1.5.2
     container_name: bazarr
     restart: unless-stopped
     security_opt:
@@ -20,7 +20,6 @@ services:
       - ${ANIME_PATH}:/anime
       - ${TV_PATH}:/tv
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.bazarr-rtr.rule=Host(`bazarr.${DOMAIN}`)"
       - "traefik.http.routers.bazarr-rtr.entrypoints=https"

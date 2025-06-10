@@ -1,7 +1,7 @@
 services:
 # RDTClient- Real-Debrid torrent client
   rdtclient:
-    image: rogerfar/rdtclient
+    image: rogerfar/rdtclient:2.0
     container_name: rdtclient
     restart: unless-stopped
     security_opt:
@@ -18,7 +18,6 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.rdtclient-rtr.rule=Host(`rdtclient.${DOMAIN}`)"
       - "traefik.http.routers.rdtclient-rtr.entrypoints=https"

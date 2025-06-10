@@ -42,7 +42,6 @@ services:
       - AWS_REGION=${AWS_REGION}
       - AWS_HOSTED_ZONE_ID=${AWS_HOSTED_ZONE_ID}
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.traefik-rtr.rule=Host(`traefik.${DOMAIN}`)"
       - "traefik.http.routers.traefik-rtr.entrypoints=https"

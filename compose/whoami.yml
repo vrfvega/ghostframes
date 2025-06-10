@@ -1,7 +1,7 @@
 services:
   # WhoAmI - For Testing and Troubleshooting
   whoami:
-    image: traefik/whoami
+    image: traefik/whoami:v1.11
     container_name: whoami
     profiles: ["debug"]
     security_opt:
@@ -10,7 +10,6 @@ services:
     networks:
       - t3_proxy
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.whoami-rtr.rule=Host(`whoami.${DOMAIN}`)"
       - "traefik.http.routers.whoami-rtr.entrypoints=https"

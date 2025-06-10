@@ -1,7 +1,7 @@
 services:
 # Wizzarr - User invitation and management
   wizarr:
-    image: ghcr.io/wizarrrr/wizarr
+    image: ghcr.io/wizarrrr/wizarr:2025.6.2
     container_name: wizarr
     restart: unless-stopped
     security_opt:
@@ -19,7 +19,6 @@ services:
       - PGID=${PGID}
       - DISABLE_BUILTIN_AUTH=True
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       
       # 🚪 Public router (no Authentik) for setup, join, static

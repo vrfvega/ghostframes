@@ -1,13 +1,12 @@
 services:
    mock-jellyfin:
-    image: alpine:3
+    image: alpine:3.22
     container_name: mock-jellyfin
     command: ["sleep", "infinity"]
     networks:
       - t3_proxy
     restart: unless-stopped
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.jellyfin-rtr.rule=Host(`jellyfin.${DOMAIN}`)"
       - "traefik.http.routers.jellyfin-rtr.entrypoints=https"

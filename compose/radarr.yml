@@ -1,7 +1,7 @@
 services:
 # Radarr - Movie management
   radarr:
-    image: ghcr.io/hotio/radarr
+    image: ghcr.io/hotio/radarr:release-2a0928c
     container_name: radarr
     restart: unless-stopped
     security_opt:
@@ -20,7 +20,6 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.radarr-rtr.rule=Host(`radarr.${DOMAIN}`)"
       - "traefik.http.routers.radarr-rtr.entrypoints=https"

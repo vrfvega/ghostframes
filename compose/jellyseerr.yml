@@ -1,6 +1,6 @@
 services:
   jellyseerr:
-    image: fallenbagel/jellyseerr
+    image: fallenbagel/jellyseerr:2.6.0
     container_name: jellyseerr
     restart: unless-stopped
     security_opt:
@@ -15,7 +15,6 @@ services:
       - TZ=${TZ}
       - LOG_LEVEL=INFO
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.jellyseerr-rtr.rule=Host(`jellyseerr.${DOMAIN}`)"
       - "traefik.http.routers.jellyseerr-rtr.entrypoints=https"

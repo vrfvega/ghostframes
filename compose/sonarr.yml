@@ -1,7 +1,7 @@
 services:
 # Sonarr - TV Shows Management
   sonarr:
-    image: ghcr.io/hotio/sonarr
+    image: ghcr.io/hotio/sonarr:release-3d24a8b
     container_name: sonarr
     restart: unless-stopped
     security_opt:
@@ -21,7 +21,6 @@ services:
       - PUID=${PUID}
       - PGID=${PGID}
     labels:
-      - "com.centurylinklabs.watchtower.enable=true"
       - "traefik.enable=true"
       - "traefik.http.routers.sonarr-rtr.rule=Host(`sonarr.${DOMAIN}`)"
       - "traefik.http.routers.sonarr-rtr.entrypoints=https"
