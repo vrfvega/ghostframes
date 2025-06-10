@@ -1,7 +1,7 @@
 services:
 # Wizzarr - User invitation and management
   wizarr:
-    image: ghcr.io/wizarrrr/wizarr:2025.6.2
+    image: ghcr.io/wizarrrr/wizarr:2025.6.3
     container_name: wizarr
     restart: unless-stopped
     security_opt:
@@ -21,16 +21,17 @@ services:
     labels:
       - "traefik.enable=true"
       
-      # 🚪 Public router (no Authentik) for setup, join, static
+      # 🚪 Public router (no Authentik)
       - >
         traefik.http.routers.wizarr-rtr-public.rule=Host(`wizarr.${DOMAIN}`) && 
-        (PathPrefix(`/join`) || PathPrefix(`/j`) || PathPrefix(`/setup`) || PathPrefix(`/static`))
+        (PathPrefix(`/join`) || PathPrefix(`/j`) || PathPrefix(`/setup`) || 
+        PathPrefix(`/static`) || PathPrefix(`/wizard`))
       - "traefik.http.routers.wizarr-rtr-public.entrypoints=https"
       - "traefik.http.routers.wizarr-rtr-public.tls=true"
       - "traefik.http.routers.wizarr-rtr-public.tls.certresolver=dns-route53"
       - "traefik.http.routers.wizarr-rtr-public.service=wizarr-svc"
 
-      # 🔐 Authenticated router (all other paths)
+      # 🔐 Authenticated router
       - "traefik.http.routers.wizarr-rtr.rule=Host(`wizarr.${DOMAIN}`)"
       - "traefik.http.routers.wizarr-rtr.entrypoints=https"
       - "traefik.http.routers.wizarr-rtr.tls=true"
